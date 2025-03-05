@@ -13,8 +13,8 @@ console.log(isMarried);
 let data = null;
 console.log(data);
 // 5. undefined
-let value = undefined;
-console.log(value);
+let undefinedValue = undefined;
+console.log(undefinedValue);
 // Object datatypes
 // 1. Array
 let names = ["Sohag", "Saymon"];
@@ -29,3 +29,30 @@ console.log(user);
 // 3. Tuple
 let person = ["Nure Alam", 24];
 console.log(person);
+// special datatypes
+//1. enum
+var Role;
+(function (Role) {
+    Role["Admin"] = "ADMIN";
+    Role["User"] = "USER";
+    Role["Moderator"] = "MODERATOR";
+})(Role || (Role = {}));
+console.log(Role.Admin);
+//2. any
+let anyValue = "Nure Alam";
+anyValue = 24;
+anyValue = false;
+console.log(anyValue);
+//unknown
+let value = "Nure Alam";
+if (typeof value === "string") {
+    console.log(value.toUpperCase());
+}
+//3. void   
+function greet() {
+    console.log("Hello, World!");
+}
+//4. never
+function throwError() {
+    throw new Error("Error");
+}
