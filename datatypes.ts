@@ -56,3 +56,10 @@ function greet(): void {
 function throwError(): never {
     throw new Error("Error");
 }
+
+// type inference
+let userName1 = "Nure Alam";
+console.log(userName1);
+// type annotation
+let userName2: string = "Nure Alam";
+console.log(userName2);
