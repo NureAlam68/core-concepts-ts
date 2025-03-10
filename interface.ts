@@ -31,3 +31,37 @@ const adminN = {
     admin: true
 }
 getAdmin(adminN)
+
+//type aliases
+type sankhya = number;
+let a: sankhya = 43;
+console.log(a)
+
+type value = string | number | null;
+let b: value = null;
+console.log(b)
+
+type arg = string | null;
+
+function abcd(obj: arg) {
+
+}
+abcd("Sohag") 
+
+// union type 
+let newData: string | number;
+
+newData = "Hello";
+newData = 123;     
+
+// intersection type 
+type NewUser = {
+    name: string,
+    email: string,
+}
+type NewAdmin = NewUser & {
+    status: string,
+}
+function newAdmin(a: NewAdmin) {
+    a.status = "Admin"
+}

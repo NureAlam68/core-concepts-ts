@@ -19,3 +19,18 @@ const adminN = {
     admin: true
 };
 getAdmin(adminN);
+let a = 43;
+console.log(a);
+let b = null;
+console.log(b);
+function abcd(obj) {
+}
+abcd("Sohag");
+// union type 
+let newData;
+newData = "Hello";
+newData = 123;
+function newAdmin(a) {
+    a.status = "Admin";
+}
+
