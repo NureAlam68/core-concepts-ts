@@ -33,4 +33,3 @@ newData = 123;
 function newAdmin(a) {
     a.status = "Admin";
 }
-
