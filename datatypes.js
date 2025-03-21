@@ -62,3 +62,8 @@ console.log(userName1);
 // type annotation
 let userName2 = "Nure Alam";
 console.log(userName2);
+// multiple datatypes
+let mixed = "Nure Alam";
+mixed = 24;
+mixed = false;
+console.log(mixed);
