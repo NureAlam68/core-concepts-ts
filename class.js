@@ -31,3 +31,22 @@ class Abc {
         console.log(this.name);
     }
 }
+class Laptop {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+        this._ssd = 512;
+        this.brand = brand;
+        this.model = model;
+        this.getDetails();
+    }
+    getDetails() {
+        console.log(`Brand: ${this.brand}, Model: ${this.model}`);
+    }
+    get ssd() {
+        return this._ssd;
+    }
+}
+let laptop = new Laptop("Dell", "Inspiron");
+console.log(laptop);
+console.log(laptop.ssd);
