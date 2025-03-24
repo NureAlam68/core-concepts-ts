@@ -50,3 +50,14 @@ class Laptop {
 let laptop = new Laptop("Dell", "Inspiron");
 console.log(laptop);
 console.log(laptop.ssd);
+class Computer {
+    constructor(brand, model) {
+        this.brand = brand;
+        this.model = model;
+    }
+    getDetails() {
+        console.log(`Brand: ${this.brand}, Model: ${this.model}`);
+    }
+}
+let computer = new Computer("HP", "14 u g6");
+computer.getDetails();

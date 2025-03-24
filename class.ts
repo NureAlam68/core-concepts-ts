@@ -53,3 +53,24 @@ let laptop = new Laptop("Dell", "Inspiron");
 console.log(laptop);
 console.log(laptop.ssd);
 
+// interface in ts class
+
+interface ComputerInterface {
+    brand: string;
+    model: string;
+}
+
+interface DetailsInterface {
+    getDetails(): void;
+}
+
+class Computer implements ComputerInterface, DetailsInterface {
+    constructor(public brand: string, public model: string) {}
+
+    getDetails(): void {
+        console.log(`Brand: ${this.brand}, Model: ${this.model}`);
+    }
+}
+
+let computer = new Computer("HP", "14 u g6");
+computer.getDetails();
